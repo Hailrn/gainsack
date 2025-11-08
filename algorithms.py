@@ -20,7 +20,7 @@ def knapsack_proposal(proposals, modal_investor):
     for proposal in proposals:
         biaya_original = proposal["BIAYA AWAL"]
         laba_original = proposal["TOTAL LABA INVESTOR"]
-        biaya = biaya_original / 1000000
+        biaya = biaya_original / 2000000
         laba = laba_original / 1000000
         rasio = laba / biaya if biaya > 0 else float('-inf') 
         proposal_rasio.append({'rasio': rasio, 'original_proposal': proposal})
